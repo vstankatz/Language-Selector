@@ -2,6 +2,12 @@
 body {
   text-align: center;
 }
+
+.modal-body {
+  margin: auto;
+  margin-bottom: 100px;
+}
+
 [type=radio] {
   position: absolute;
   opacity: 0;
@@ -17,15 +23,27 @@ body {
   border: 4px solid green;
 }
 
-label span {
+span.box {
   display: inline-block;
+  margin-top: ;
+  text-align: center;
+}
+
+.row {
+  margin: 5px 5px 5px 5px;
+
+}
+
+label span {
+  display: inline;
   text-align: center;
   font-size: 15px;
   font-weight: bold;
-  width: 300px;
-  height:auto;
+  width: 150px;
+  height: 150px;
   background-color: red;
   color: white;
+  padding: 40px;
 }
 
 .javaScript {
