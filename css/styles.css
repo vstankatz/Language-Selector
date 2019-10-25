@@ -50,13 +50,10 @@ span.close {
 span.box {
   display: inline-block;
   text-align: center;
-
-
 }
 
 .row {
   margin: 5px 5px 5px 5px;
-
 }
 
 label span  {
@@ -81,7 +78,7 @@ label span  {
 }
 
 .javaScript {
-  display: none;
+  
 }
 
 .swift {
@@ -91,8 +88,28 @@ label span  {
 }
 
 .ruby {
+  display: none;
   margin: auto;
   }
+
+.swiftBody {
+  text-align: left;
+}
+.swiftBody p {
+  margin-right: 150px;
+  font-size: 16px;
+}
+
+#swiftLogo {
+  display: block;
+  width: 150px;
+  height: auto;
+}
+
+#wellSwift {
+  margin-right: 150px;
+text-align: left;
+}
 
 .rubyBody {
   text-align: left;
@@ -121,4 +138,36 @@ footer {
 
 .tiny {
   font-size: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+    #swiftP {
+    text-align: center;
+    margin: auto;
+  }
+
+  #swiftLogo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  #wellSwift {
+  text-align: center;
+  }
+
+  #rubyP {
+  text-align: center;
+  margin: auto;
+  }
+
+  #rubyLogo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  #rubySwift {
+  text-align: center;
+  }
 }
