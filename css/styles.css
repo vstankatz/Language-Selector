@@ -71,27 +71,6 @@ label span  {
   padding: 20px;
 }
 
-.javaScript {
-  display: none;
-}
-
-.swift {
-  display:
-}
-
-.ruby {
-  display: none;
-}
-
-footer {
-  font-size: 10px;
-}
-
-.tiny {
-  font-size: 10px;
-}
-
-
 .page-header {
   padding: auto;
   margin-right: 100px;
@@ -101,7 +80,45 @@ footer {
 
 }
 
+.javaScript {
+  display: none;
+}
+
 .swift {
+  display: none;
   margin: auto;
   text-align: center;
+}
+
+.ruby {
+  margin: auto;
+  }
+
+.rubyBody {
+  text-align: left;
+
+}
+
+.rubyBody p {
+  font-size: 16px;
+  margin-right: 150px;
+}
+
+#wellRuby {
+  text-align: left;
+  margin-right: 150px;
+}
+#rubyLogo {
+  display: center;
+  width: 150px;
+  height: auto;
+}
+
+footer {
+  font-size: 10px;
+  text-align: center;
+}
+
+.tiny {
+  font-size: 10px;
 }
