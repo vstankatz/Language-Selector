@@ -19,25 +19,31 @@ $(document).ready(function() {
   }
 
   $("form#questions").submit(function(event) {
-      var questionOneA = $("input#questionOneA");
-      var questionOneB = $("input#questionOneB");
-      var questionOneC = $("input#questionOneC");
-      var questionTwoA = $("input#questionTwoA");
-      var questionTwoB = $("input#questionTwoB");
-      var questionTwoC = $("input#questionTwoC");
-      var questionThreeA = $("input#questionThreeA");
-      var questionThreeB = $("input#questionThreeB");
-      var questionThreeC = $("input#questionThreeC");
-      var questionFourA = $("input#questionFourA");
-      var questionFourB = $("input#questionFourB");
-      var questionFourC = $("input#questionFourC");
-      var questionFiveA = $("input#questionFiveA");
-      var questionFiveB = $("input#questionFiveB");
-      var questionFiveC = $("input#questionFiveC");
-
-
-
-
     event.preventDefault();
+      var questionOne = parseInt($("input:radio[name=questionOne]:checked").val());
+      console.log(questionOne);
+      var questionTwo = parseInt($("input:radio[name=questionTwo]:checked").val());
+      var questionThree = parseInt($("input:radio[name=questionThree]:checked").val());
+      var questionFour = parseInt($("input:radio[name=questionFour]:checked").val());
+      var questionFive = parseInt($("input:radio[name=questionFive]:checked").val());
+
+      var totalQuiz = questionOne + questionTwo + questionThree + questionFour + questionFive;
+      console.log(totalQuiz);
+
+          if (totalQuiz <= 6) {
+            $(".swift").show();
+          } else if (totalQuiz <= 11) {
+            $(".javaScript").show();
+          } else if (totalQuiz <= 15) {
+            $(".ruby").show();
+          }
+
+
+
+
+
+
+
+
   });
 });
