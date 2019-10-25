@@ -77,8 +77,9 @@ label span  {
 
 }
 
-.javaScript {
-  
+.java {
+margin: auto;
+text-align: center;
 }
 
 .swift {
@@ -92,10 +93,33 @@ label span  {
   margin: auto;
   }
 
+.javaBody {
+  text-align: left;
+}
+#javaP {
+  margin-right: 150px;
+  font-size: 16px;
+}
+
+
+#javaLogo {
+  display: block;
+  width: 200px;
+  height: auto;
+}
+
+#wellJava {
+  margin-right: 150px;
+  text-align: left;
+  }
+
+
+
+SPACE HERE APOIFHSIOEJFIOJE
 .swiftBody {
   text-align: left;
 }
-.swiftBody p {
+#swiftP {
   margin-right: 150px;
   font-size: 16px;
 }
@@ -116,7 +140,7 @@ text-align: left;
 
 }
 
-.rubyBody p {
+#rubyP {
   font-size: 16px;
   margin-right: 150px;
 }
@@ -141,7 +165,16 @@ footer {
 }
 
 @media only screen and (max-width: 700px) {
-    #swiftP {
+ #javaLogo {
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+ #javaP {
+   text-align: center;
+ }
+
+  #swiftP {
     text-align: center;
     margin: auto;
   }
