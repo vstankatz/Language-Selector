@@ -17,65 +17,79 @@
         </div>
         <h4></h4>
         <p>Congratulations on stepping forward into the world of programming! In order for us to help you get started on the right foot take our <strong>Pick-a-Program</strong> quiz!</p>
-        <div class="modal-body">
-          <div class="container-fluid">
-            <form id="questions">
-              <div class="row">
-                <div class="col-md-12 jumbotron">
-                  QUESTION 1
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-4">
-                  <label class="radio-inline">
-                    <input type="radio" name="inputName" value="">
-                    <span class="box">ANSWER A</span>
-                  </label>
-                </div>
-                <div class="col-xs-4 ml-auto">
-                  <label class="radio-inline">
-                    <input type="radio" name="inputName" value="">
-                    <span class="box">ANSWER B</span>
-                  </label>
-                </div>
-                <div class="col-xs-4 ml-auto">
-                  <label class="radio-inline">
-                    <input type="radio" name="inputName" value="">
-                    <span class="box">ANSWER C</span>
-                  </label>
-                </div>
-              </div>
+        <button type="button" data-toggle="modal" data-target="targetModal" id="quizBtn">Take the Quiz</button>
 
-              <div class="row">
-                <div class="col-xs-12 jumbotron">
-                  QUESTION 2
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-4">
-                  <label class="radio-inline">
-                    <input type="radio" name="inputName" value="">
-                    <span class="box">ANSWER A</span>
-                  </label>
-                </div>
-                <div class="col-xs-4">
-                  <label class="radio-inline">
-                    <input type="radio" name="inputName" value="">
-                    <span class="box">ANSWER B</span>
-                  </label>
-                </div>
-                <div class="col-xs-4">
-                  <label class="radio-inline">
-                    <input type="radio" name="inputName" value="">
-                    <span class="box">ANSWER C</span>
-                  </label>
-                </div>
-              </div>
+        <div class="modal" role="dialog" id="targetModal" area-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Pick-a-Program</h4>
+                <div class="modal-body"">
+                  <div class="container-fluid">
+                    <form id="questions">
+                      <div class="row">
+                        <div class="col-md-12 jumbotron">
+                          QUESTION 1
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-xs-4">
+                          <label class="radio-inline">
+                            <input type="radio" name="inputName" value="">
+                            <span class="box">ANSWER A</span>
+                          </label>
+                        </div>
+                        <div class="col-xs-4 ml-auto">
+                          <label class="radio-inline">
+                            <input type="radio" name="inputName" value="">
+                            <span class="box">ANSWER B</span>
+                          </label>
+                        </div>
+                        <div class="col-xs-4 ml-auto">
+                          <label class="radio-inline">
+                            <input type="radio" name="inputName" value="">
+                            <span class="box">ANSWER C</span>
+                          </label>
+                        </div>
+                      </div>
 
-              <button type="submit" name="button">Find my Language!</button>
-            </form>
+                      <div class="row">
+                        <div class="col-xs-12 jumbotron">
+                          QUESTION 2
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-xs-4">
+                          <label class="radio-inline">
+                            <input type="radio" name="inputName" value="">
+                            <span class="box">ANSWER A</span>
+                          </label>
+                        </div>
+                        <div class="col-xs-4">
+                          <label class="radio-inline">
+                            <input type="radio" name="inputName" value="">
+                            <span class="box">ANSWER B</span>
+                          </label>
+                        </div>
+                        <div class="col-xs-4">
+                          <label class="radio-inline">
+                            <input type="radio" name="inputName" value="">
+                            <span class="box">ANSWER C</span>
+                          </label>
+                        </div>
+                      </div>
+
+                      <button type="submit" name="button" id="submitBtn">Find my Language!</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
+
 
 
 
