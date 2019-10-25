@@ -3,6 +3,9 @@ $(document).ready(function() {
   var modal = document.getElementById("targetModal");
   var exit = document.getElementsByClassName("close")[0];
   var quizBtn = document.getElementById("quizBtn");
+  var backJava = document.getElementById("backJava");
+  var backSwift = document.getElementById("backSwift");
+  var backRuby = document.getElementById("backRuby");
 
   quizBtn.onclick = function() {
     modal.style.display = "inline-block";
@@ -31,19 +34,21 @@ $(document).ready(function() {
       console.log(totalQuiz);
 
           if (totalQuiz <= 6) {
+            $(".modal").hide();
+            $(".intro").hide();
             $(".swift").show();
           } else if (totalQuiz <= 11) {
+            $(".modal").hide();
+            $(".intro").hide();
             $(".javaScript").show();
           } else if (totalQuiz <= 15) {
+            $(".modal").hide();
+            $(".intro").hide();
             $(".ruby").show();
+          } else {
+            alert("Please be sure to pick an option for each question.")
           }
 
-
-
-
-
-
-
-
   });
+
 });

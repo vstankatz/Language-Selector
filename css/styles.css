@@ -1,6 +1,7 @@
 
 body {
   text-align: center;
+  margin: auto;
 }
 
 .modal {
@@ -75,11 +76,11 @@ label span  {
 }
 
 .swift {
-  display: none;
+  display:
 }
 
 .ruby {
-  display:
+  display: none;
 }
 
 footer {
@@ -88,4 +89,19 @@ footer {
 
 .tiny {
   font-size: 10px;
+}
+
+
+.page-header {
+  padding: auto;
+  margin-right: 100px;
+  margin-bottom: 10px;
+  margin-left: 100px;
+  padding-left: auto;
+
+}
+
+.swift {
+  margin: auto;
+  text-align: center;
 }
