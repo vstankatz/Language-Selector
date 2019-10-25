@@ -41,9 +41,14 @@ span.close {
 
 [typer=radio] + span {
   cursor: pointer;
+
 }
 
 [type=radio]:checked + span {
+  border: 4px solid green;
+}
+
+[type=radio]:checked + img {
   border: 4px solid green;
 }
 
@@ -59,13 +64,20 @@ span.box {
 label span  {
   display: inline;
   text-align: center;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: bold;
   width: 100px;
   height: 100px;
-  background-color: red;
+  background-color: #ff6666;
   color: white;
   padding: 20px;
+}
+
+label img {
+  display: inline;
+  width: 100px;
+  height: 100px;
+
 }
 
 .page-header {
@@ -78,6 +90,7 @@ label span  {
 }
 
 .java {
+display: none;
 margin: auto;
 text-align: center;
 }
@@ -113,9 +126,6 @@ text-align: center;
   text-align: left;
   }
 
-
-
-SPACE HERE APOIFHSIOEJFIOJE
 .swiftBody {
   text-align: left;
 }
@@ -132,7 +142,7 @@ SPACE HERE APOIFHSIOEJFIOJE
 
 #wellSwift {
   margin-right: 150px;
-text-align: left;
+  text-align: left;
 }
 
 .rubyBody {
@@ -165,6 +175,11 @@ footer {
 }
 
 @media only screen and (max-width: 700px) {
+
+  .javaBody {
+    margin: auto;
+  }
+
  #javaLogo {
    margin-left: auto;
    margin-right: auto;
@@ -172,7 +187,14 @@ footer {
 
  #javaP {
    text-align: center;
+   margin: auto;
  }
+
+ #wellJava {
+   margin-left: auto;
+   margin-right: auto;
+ }
+
 
   #swiftP {
     text-align: center;
@@ -199,8 +221,8 @@ footer {
     margin-right: auto;
   }
 
-
-  #rubySwift {
-  text-align: center;
+  #wellRuby {
+    margin-left: auto;
+    margin-right: auto;
   }
 }

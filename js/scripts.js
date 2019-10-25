@@ -6,6 +6,7 @@ $(document).ready(function() {
   var backJava = document.getElementById("backJava");
   var backSwift = document.getElementById("backSwift");
   var backRuby = document.getElementById("backRuby");
+  var nameInput = $("input#nameInput").val();
 
   quizBtn.onclick = function() {
     modal.style.display = "inline-block";
@@ -21,6 +22,23 @@ $(document).ready(function() {
     }
   }
 
+  $(".name").text(" " + nameInput);
+
+  backJava.onclick = function() {
+    $(".java").hide();
+    $(".intro").show();
+  }
+
+  backSwift.onclick = function() {
+    $(".swift").hide();
+    $(".intro").show();
+  }
+
+  backRuby.onclick = function() {
+    $(".ruby").hide();
+    $(".intro").show();
+  }
+
   $("form#questions").submit(function(event) {
     event.preventDefault();
       var questionOne = parseInt($("input:radio[name=questionOne]:checked").val());
@@ -32,6 +50,7 @@ $(document).ready(function() {
 
       var totalQuiz = questionOne + questionTwo + questionThree + questionFour + questionFive;
       console.log(totalQuiz);
+      console.log(name);
 
           if (totalQuiz <= 6) {
             $(".modal").hide();
@@ -40,7 +59,7 @@ $(document).ready(function() {
           } else if (totalQuiz <= 11) {
             $(".modal").hide();
             $(".intro").hide();
-            $(".javaScript").show();
+            $(".java").show();
           } else if (totalQuiz <= 15) {
             $(".modal").hide();
             $(".intro").hide();
