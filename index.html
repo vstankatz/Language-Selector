@@ -19,7 +19,7 @@
         <p>Congratulations on stepping forward into the world of programming! In order for us to help you get started on the right foot take our <strong>Pick-a-Program</strong> quiz!</p>
         <button type="button" data-toggle="modal" data-target="targetModal" id="quizBtn">Take the Quiz</button>
 
-        <div class="modal" role="dialog" id="targetModal" area-labelledby="myModalLabel">
+        <div class="modal" role="dialog" id="targetModal" area-labelledby="myModalLabel" tabindex="-1">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <span class="close">&times;</span>
@@ -36,20 +36,20 @@
                       <div class="row">
                         <div class="col-xs-4">
                           <label class="radio-inline">
-                            <input type="radio" name="inputName" value="">
-                            <span class="box">ANSWER A</span>
+                            <input type="radio" name="inputName" id="questionOneA"value="A">
+                            <span class="box" id="red">ANSWER A</span>
                           </label>
                         </div>
                         <div class="col-xs-4 ml-auto">
                           <label class="radio-inline">
-                            <input type="radio" name="inputName" value="">
-                            <span class="box">ANSWER B</span>
+                            <input type="radio" name="inputName" id="questionOneB"value="B">
+                            <span class="box" id="red">ANSWER B</span>
                           </label>
                         </div>
                         <div class="col-xs-4 ml-auto">
                           <label class="radio-inline">
-                            <input type="radio" name="inputName" value="">
-                            <span class="box">ANSWER C</span>
+                            <input type="radio" name="inputName" id="questionOneC" value="C">
+                            <span class="box" id="red">ANSWER C</span>
                           </label>
                         </div>
                       </div>
@@ -62,19 +62,96 @@
                       <div class="row">
                         <div class="col-xs-4">
                           <label class="radio-inline">
-                            <input type="radio" name="inputName" value="">
+                            <input type="radio" name="inputName" id="questionTwoA"value="A">
                             <span class="box">ANSWER A</span>
                           </label>
                         </div>
                         <div class="col-xs-4">
                           <label class="radio-inline">
-                            <input type="radio" name="inputName" value="">
+                            <input type="radio" name="inputName" id="questionTwoB" value="B">
                             <span class="box">ANSWER B</span>
                           </label>
                         </div>
                         <div class="col-xs-4">
                           <label class="radio-inline">
-                            <input type="radio" name="inputName" value="">
+                            <input type="radio" name="inputName" id="questionTwoC" value="C">
+                            <span class="box">ANSWER C</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-xs-12 jumbotron">
+                          QUESTION 3
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-xs-4">
+                          <label class="radio-inline">
+                            <input type="radio" name="inputName" id="questionThreeA" value="A">
+                            <span class="box">ANSWER A</span>
+                          </label>
+                        </div>
+                        <div class="col-xs-4">
+                          <label class="radio-inline">
+                            <input id="questionThreeB" type="radio" name="inputName" value="B">
+                            <span class="box">ANSWER B</span>
+                          </label>
+                        </div>
+                        <div class="col-xs-4">
+                          <label class="radio-inline">
+                            <input id="questionThreeC" type="radio" name="inputName" value="C">
+                            <span class="box">ANSWER C</span>
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-xs-12 jumbotron">
+                          QUESTION 4
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-xs-4">
+                          <label class="radio-inline">
+                            <input id="questionFourA" type="radio" name="inputName" value="A">
+                            <span class="box">ANSWER A</span>
+                          </label>
+                        </div>
+                        <div class="col-xs-4">
+                          <label class="radio-inline">
+                            <input id="questionFourB" type="radio" name="inputName" value="B">
+                            <span class="box">ANSWER B</span>
+                          </label>
+                        </div>
+                        <div class="col-xs-4">
+                          <label class="radio-inline">
+                            <input type="radio" id="questionFourC" name="inputName" value="C">
+                            <span class="box">ANSWER C</span>
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-xs-12 jumbotron">
+                          QUESTION 5
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-xs-4">
+                          <label class="radio-inline">
+                            <input type="radio" id="questionFiveA" name="inputName" value="A">
+                            <span class="box">ANSWER A</span>
+                          </label>
+                        </div>
+                        <div class="col-xs-4">
+                          <label class="radio-inline">
+                            <input id="questionFiveB" type="radio" name="inputName" value="B">
+                            <span class="box">ANSWER B</span>
+                          </label>
+                        </div>
+                        <div class="col-xs-4">
+                          <label class="radio-inline">
+                            <input id="questionFiveC" type="radio" name="inputName" value="C">
                             <span class="box">ANSWER C</span>
                           </label>
                         </div>
