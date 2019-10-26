@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+
   var modal = document.getElementById("targetModal");
   var exit = document.getElementsByClassName("close")[0];
   var quizBtn = document.getElementById("quizBtn");
@@ -37,6 +38,7 @@ $(document).ready(function() {
     $(".ruby").hide();
     $(".intro").show();
   }
+
 
   $("form#questions").submit(function(event) {
     event.preventDefault();

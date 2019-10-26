@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/wordart.css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
     <meta charset="utf-8">
     <title>Code Mode</title>
   </head>
@@ -12,10 +14,12 @@
     <div class="container">
       <div class="intro">
         <div class="jumbotron">
-          <h1>Code Mode</h1>
+          <div class="wordart rainbow">
+            <span class="text">Code Mode</span></div>
           <h3>Your one stop destination to find the coding language right for you!</h3>
         </div>
         <p>Congratulations on stepping forward into the world of programming!<br>In order for us to help you get started on the right foot take our <strong>Pick-a-Program</strong> quiz!</p>
+
         <button type="button" data-toggle="modal" data-target="targetModal" id="quizBtn" class="btn btn-danger">Take the Quiz</button>
         </div>
 
@@ -24,12 +28,13 @@
             <div class="modal-content">
               <span class="close">&times;</span>
               <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel">Pick-a-Program</h4>
-                <div class="modal-body"">
+                <div class="modal-title wordart purple" id="myModalLabel"><span class="text">Pick-a-Program</span></div>
+                </div>
+                <div class="modal-body">
                   <div class="container-fluid">
                     <form id="questions">
                       <div class="row">
-                        <div class="col-md-12 jumbotron">
+                        <div class="col-xs-12 jumbotron">
                           Which of the following super-powers would you pick?
                         </div>
                       </div>
@@ -40,13 +45,13 @@
                             <span class="box" id="red"> Flight </span>
                           </label>
                         </div>
-                        <div class="col-xs-4 ml-auto">
+                        <div class="col-xs-4">
                           <label class="radio-inline">
                             <input type="radio" name="questionOne" id="questionOneB" value="2">
                             <span class="box" id="red">Telekinesis</span>
                           </label>
                         </div>
-                        <div class="col-xs-4 ml-auto">
+                        <div class="col-xs-4">
                           <label class="radio-inline">
                             <input type="radio" name="questionOne" id="questionOneC" value="3">
                             <span class="box" id="red">Mind Control</span>
@@ -61,21 +66,21 @@
                       </div>
                       <div class="row">
                         <div class="col-xs-4">
-                          <label class="radio-inline">
+                          <label class="radio-inline" id="bear">
                             <input type="radio" name="questionTwo" id="questionTwoA"value="1">
-                            <span class="box">Bear</span>
+                            <span class="box bear">Bear</span>
                           </label>
                         </div>
                         <div class="col-xs-4">
-                          <label class="radio-inline">
+                          <label class="radio-inline" id="beet">
                             <input type="radio" name="questionTwo" id="questionTwoB" value="2">
-                            <span class="box">Beet</span>
+                            <span class="box beet">Beet</span>
                           </label>
                         </div>
                         <div class="col-xs-4">
-                          <label class="radio-inline">
+                          <label class="radio-inline" id="battle">
                             <input type="radio" name="questionTwo" id="questionTwoC" value="3">
-                            <span class="box">Battlestar Galactica</span>
+                            <span class="box battle"></span>
                           </label>
                         </div>
                       </div>
@@ -86,21 +91,21 @@
                       </div>
                       <div class="row">
                         <div class="col-xs-4">
-                          <label class="radio-inline">
+                          <label class="radio-inline" id="home">
                             <input type="radio" name="questionThree" id="questionThreeA" value="1">
-                            <span class="box">Your Parent's Home</span>
+                            <span class="box home">Your Parent's Home</span>
                           </label>
                         </div>
                         <div class="col-xs-4">
-                          <label class="radio-inline">
+                          <label class="radio-inline" id="hawaii">
                             <input id="questionThreeB" type="radio" name="questionThree" value="2">
-                            <span class="box">Hawaii</span>
+                            <span class="box hawaii">Hawaii</span>
                           </label>
                         </div>
                         <div class="col-xs-4">
-                          <label class="radio-inline">
+                          <label class="radio-inline" id="space">
                             <input id="questionThreeC" type="radio" name="questionThree" value="3">
-                            <span class="box">Outerspace</span>
+                            <span class="box space">Outerspace</span>
                           </label>
                         </div>
                       </div>
@@ -169,7 +174,6 @@
                     </form>
                   </div>
                 </div>
-              </div>
             </div>
           </div>
         </div>

@@ -8,7 +8,7 @@ body {
 .modal {
   display: none;
   position: fixed;
-  width: 100%;
+  width: auto;
   height: auto;
   overflow-y: auto;
   margin: auto;
@@ -79,11 +79,84 @@ label span  {
   padding: 20px;
 }
 
+label#beet span {
+  background-image: url("img/beet.jpg"); height: 100px;
+  background-position: block;
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  font-size: 30px;
+  font-family: courier;
+}
+
+label#bear span {
+  background-image: url("img/bear.jpg"); height: 100px;
+  background-position: block;
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  font-size: 30px;
+  font-family: courier;
+}
+
+label#battle span {
+  background-image: url("img/battlestar.jpg"); height: 100px;
+  background-position: block;
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+
+}
+
+label#home span {
+  background-image: url("img/home.jpg"), linear-gradient(yellow, cyan);
+  background-position: block;
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  font-size: 15px;
+  font-family: 'Courgette';
+}
+
+label#hawaii span {
+  background-image: url("img/hawaii.jpg"), linear-gradient(red, yellow);
+  background-position: block;
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  font-size: 15px;
+  font-family: 'Courgette';
+}
+
+label#space span {
+  background-image: url("img/space.jpg"), linear-gradient(black, silver);
+  background-position: block;
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  font-size: 15px;
+  font-family: 'Courgette';
+}
+
 label img {
   display: inline;
   width: 100px;
   height: 100px;
 
+}
+
+.box.beet {
+  padding-top: 60px;
+}
+
+.box.bear {
+  padding-top: 60px;
+}
+
+.box.home {
+  padding-top: 15px;
+}
+
+.box.hawaii {
+  padding-top: 60px;
+}
+
+.box.space {
+  padding-top: 60px;
 }
 
 .page-header {
