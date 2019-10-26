@@ -22,6 +22,7 @@ $(document).ready(function() {
     }
   }
 
+
   backJava.onclick = function() {
     $(".java").hide();
     $(".intro").show();
@@ -39,8 +40,7 @@ $(document).ready(function() {
 
   $("form#questions").submit(function(event) {
     event.preventDefault();
-    $('[data-toggle="tooltip"]').tooltip();
-    $('[data-toggle="popover"]').popover();
+
 
       var questionOne = parseInt($("input:radio[name=questionOne]:checked").val());
       console.log(questionOne);
