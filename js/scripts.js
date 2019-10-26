@@ -6,7 +6,7 @@ $(document).ready(function() {
   var backJava = document.getElementById("backJava");
   var backSwift = document.getElementById("backSwift");
   var backRuby = document.getElementById("backRuby");
-  var nameInput = $("input#nameInput").val();
+
 
   quizBtn.onclick = function() {
     modal.style.display = "inline-block";
@@ -21,8 +21,6 @@ $(document).ready(function() {
       modal.style.display = "none";
     }
   }
-
-  $(".name").text(" " + nameInput);
 
   backJava.onclick = function() {
     $(".java").hide();
@@ -41,29 +39,35 @@ $(document).ready(function() {
 
   $("form#questions").submit(function(event) {
     event.preventDefault();
+    $('[data-toggle="tooltip"]').tooltip();
+    $('[data-toggle="popover"]').popover();
+
       var questionOne = parseInt($("input:radio[name=questionOne]:checked").val());
       console.log(questionOne);
       var questionTwo = parseInt($("input:radio[name=questionTwo]:checked").val());
       var questionThree = parseInt($("input:radio[name=questionThree]:checked").val());
       var questionFour = parseInt($("input:radio[name=questionFour]:checked").val());
       var questionFive = parseInt($("input:radio[name=questionFive]:checked").val());
-
+      var nameInput = $("input#nameInput").val();
       var totalQuiz = questionOne + questionTwo + questionThree + questionFour + questionFive;
       console.log(totalQuiz);
-      console.log(name);
+      console.log(nameInput);
 
           if (totalQuiz <= 6) {
             $(".modal").hide();
             $(".intro").hide();
             $(".swift").show();
+            $(".name").text(" " + nameInput);
           } else if (totalQuiz <= 11) {
             $(".modal").hide();
             $(".intro").hide();
             $(".java").show();
+            $(".name").text(" " + nameInput);
           } else if (totalQuiz <= 15) {
             $(".modal").hide();
             $(".intro").hide();
             $(".ruby").show();
+            $(".name").text(" " + nameInput);
           } else {
             alert("Please be sure to pick an option for each question.")
           }

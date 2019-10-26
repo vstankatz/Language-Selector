@@ -2,6 +2,7 @@
 body {
   text-align: center;
   margin: auto;
+  background-color: #e6ffff;
 }
 
 .modal {
@@ -11,6 +12,7 @@ body {
   height: auto;
   overflow-y: auto;
   margin: auto;
+
 }
 
 .col-xs-4 {
@@ -23,10 +25,14 @@ span.close {
   font-weight: bold;
 }
 
+.modal-content {
+  background-color: #ffffe6;
+}
 .modal-body {
   margin: auto;
   margin-bottom: 100px;
   font-family: helvetica;
+
 }
 
 .modal-title {
@@ -45,11 +51,11 @@ span.close {
 }
 
 [type=radio]:checked + span {
-  border: 4px solid green;
+  border: 4px solid #009933;
 }
 
 [type=radio]:checked + img {
-  border: 4px solid green;
+  border: 4px solid #009933;
 }
 
 span.box {
@@ -143,6 +149,17 @@ text-align: center;
 #wellSwift {
   margin-right: 150px;
   text-align: left;
+}
+
+#redText {
+  color: red;
+}
+
+#greenText {
+  color: darkgreen;
+}
+#purpleText {
+  color: #ac00e6;
 }
 
 .rubyBody {
