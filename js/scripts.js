@@ -59,21 +59,22 @@ $(document).ready(function() {
             $(".modal").hide();
             $(".intro").hide();
             $(".swift").show();
-            $(".name").text(" " + nameInput);
           } else if (totalQuiz <= 11) {
             $(".modal").hide();
             $(".intro").hide();
             $(".java").show();
-            $(".name").text(" " + nameInput);
           } else if (totalQuiz <= 15) {
             $(".modal").hide();
             $(".intro").hide();
             $(".ruby").show();
-            $(".name").text(" " + nameInput);
           } else {
             alert("Please be sure to pick an option for each question.")
           }
-
+          if (nameInput.length === 0) {
+            $(".name").text(nameInput)
+          } else {
+            $(".name").text(" " + nameInput);
+          }
   });
 
 });

@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/wordart.css">
     <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <meta charset="utf-8">
     <title>Code Mode</title>
@@ -28,39 +29,39 @@
             <div class="modal-content">
               <span class="close">&times;</span>
               <div class="modal-header">
-                <div class="modal-title wordart purple" id="myModalLabel"><span class="text">Pick-a-Program</span></div>
+                <div class="modal-title" id="myModalLabel"><span class="text">Pick-a-Program</span></div>
                 </div>
                 <div class="modal-body">
                   <div class="container-fluid">
                     <form id="questions">
                       <div class="row">
-                        <div class="col-xs-12 jumbotron">
+                        <div class="col-xs-12 jumbotron question">
                           Which of the following super-powers would you pick?
                         </div>
                       </div>
                       <div class="row">
                         <div class="col-xs-4">
-                          <label class="radio-inline">
+                          <label class="radio-inline" id="flight">
                             <input type="radio" name="questionOne" id="questionOneA" value="1">
-                            <span class="box" id="red"> Flight </span>
+                            <span class="box flight"> Flight </span>
                           </label>
                         </div>
                         <div class="col-xs-4">
-                          <label class="radio-inline">
+                          <label class="radio-inline" id="thought">
                             <input type="radio" name="questionOne" id="questionOneB" value="2">
-                            <span class="box" id="red">Telekinesis</span>
+                            <span class="box thought">Telekinesis</span>
                           </label>
                         </div>
                         <div class="col-xs-4">
-                          <label class="radio-inline">
+                          <label class="radio-inline" id="control">
                             <input type="radio" name="questionOne" id="questionOneC" value="3">
-                            <span class="box" id="red">Mind Control</span>
+                            <span class="box control">Mind Control</span>
                           </label>
                         </div>
                       </div>
 
                       <div class="row">
-                        <div class="col-xs-12 jumbotron">
+                        <div class="col-xs-12 jumbotron question">
                           Which is Best?
                         </div>
                       </div>
@@ -85,7 +86,7 @@
                         </div>
                       </div>
                       <div class="row">
-                        <div class="col-xs-12 jumbotron">
+                        <div class="col-xs-12 jumbotron question">
                           Where Would You Like to Vacation?
                         </div>
                       </div>
@@ -111,7 +112,7 @@
                       </div>
 
                       <div class="row">
-                        <div class="col-xs-12 jumbotron">
+                        <div class="col-xs-12 jumbotron question">
                           Which Animal Do You Prefer?
                         </div>
                       </div>
@@ -137,27 +138,27 @@
                       </div>
 
                       <div class="row">
-                        <div class="col-xs-12 jumbotron">
+                        <div class="col-xs-12 jumbotron question">
                           Where Do You See Yourself in Five Years?
                         </div>
                       </div>
                       <div class="row">
                         <div class="col-xs-4">
-                          <label class="radio-inline">
+                          <label class="radio-inline" id="sober">
                             <input type="radio" id="questionFiveA" name="questionFive" value="1">
-                            <span class="box">Five Years Sober</span>
+                            <span class="box sober">Five Years Sober</span>
                           </label>
                         </div>
                         <div class="col-xs-4">
-                          <label class="radio-inline">
+                          <label class="radio-inline" id="happy">
                             <input id="questionFiveB" type="radio" name="questionFive" value="2">
-                            <span class="box">Happy and Successful</span>
+                            <span class="box happy">Happy and Successful</span>
                           </label>
                         </div>
                         <div class="col-xs-4">
-                          <label class="radio-inline">
+                          <label class="radio-inline" id="dead">
                             <input id="questionFiveC" type="radio" name="questionFive" value="3">
-                            <span class="box">A Grave</span>
+                            <span class="box dead">A Grave</span>
                           </label>
                         </div>
                       </div>

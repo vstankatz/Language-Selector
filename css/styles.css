@@ -67,8 +67,14 @@ span.box {
   margin: 5px 5px 5px 5px;
 }
 
+.jumbotron.question {
+font-size: 20px;
+font-weight: bold;
+
+}
+
 label span  {
-  display: inline;
+  display: block;
   text-align: center;
   font-size: 12px;
   font-weight: bold;
@@ -76,7 +82,35 @@ label span  {
   height: 100px;
   background-color: #ff6666;
   color: white;
-  padding: 20px;
+
+}
+
+label#flight span {
+  background-image: url("img/flight.jpg");
+  background-position: block;
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  font-size: 20px;
+  font-family: 'Alegreya Sans SC';
+}
+
+label#thought span {
+  background-image: url("img/thought.jpg");
+  background-position: block;
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  font-size: 15px;
+  font-family: 'Alegreya Sans SC';
+  color: black;
+}
+
+label#control span {
+  background-image: url("img/control.jpg");
+  background-position: block;
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  font-size: 18px;
+  font-family: 'Alegreya Sans SC';
 }
 
 label#beet span {
@@ -106,20 +140,20 @@ label#battle span {
 }
 
 label#home span {
-  background-image: url("img/home.jpg"), linear-gradient(yellow, cyan);
+  background-image: url("img/home.jpg"), linear-gradient(green, cyan); height: 100px;
   background-position: block;
   background-size: 100px 100px;
   background-repeat: no-repeat;
-  font-size: 15px;
+  font-size: 18px;
   font-family: 'Courgette';
 }
 
 label#hawaii span {
-  background-image: url("img/hawaii.jpg"), linear-gradient(red, yellow);
+  background-image: url("img/hawaii.jpg"), linear-gradient(red, yellow); height: 100px;
   background-position: block;
   background-size: 100px 100px;
   background-repeat: no-repeat;
-  font-size: 15px;
+  font-size: 23px;
   font-family: 'Courgette';
 }
 
@@ -128,8 +162,43 @@ label#space span {
   background-position: block;
   background-size: 100px 100px;
   background-repeat: no-repeat;
-  font-size: 15px;
+  font-size: 16px;
+  text-align: center;
   font-family: 'Courgette';
+}
+
+label#sober span {
+  background-image: url("img/sober.jpg");
+  background-color: black;
+  background-position: block;
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  font-size: 20px;
+  font-family: 'Alegreya Sans SC';
+}
+
+label#happy span {
+  background-image: url("img/happy.jpg");
+  background-position: block;
+  background-size: 50px;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  font-size: 18px;
+  font-family: 'Alegreya Sans SC';
+  text-align: center;
+  line-height: 33px;
+}
+
+label#dead span {
+  background-image: url("img/grave.jpg"), linear-gradient(black, #003300);
+  background-color: black;
+  background-position: block;
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  font-size: 20px;
+  font-family: 'Alegreya Sans SC';
+  padding: 20px;
 }
 
 label img {
@@ -137,6 +206,17 @@ label img {
   width: 100px;
   height: 100px;
 
+}
+.box.flight {
+  padding-top: 60px;
+}
+
+.box.thought {
+  padding-top: 60px;
+}
+
+.box.control {
+  padding-top: 50px;
 }
 
 .box.beet {
@@ -152,11 +232,34 @@ label img {
 }
 
 .box.hawaii {
-  padding-top: 60px;
+  padding-top: 40px;
 }
 
 .box.space {
-  padding-top: 60px;
+  padding-top: 65px;
+}
+
+.box.sober {
+  padding-top: 15px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.box.happy {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.box.and {
+
+}
+
+.box.successful {
+
+}
+
+.box.dead {
+  padding-top: 30px;
 }
 
 .page-header {
@@ -226,13 +329,16 @@ text-align: center;
 
 #redText {
   color: red;
+  font-family: 'Courgette';
 }
 
 #greenText {
   color: darkgreen;
+  font-family: 'Courgette';
 }
 #purpleText {
   color: #ac00e6;
+  font-family: 'Courgette';
 }
 
 .rubyBody {
