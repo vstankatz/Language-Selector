@@ -45,15 +45,13 @@ $(document).ready(function() {
 
 
       var questionOne = parseInt($("input:radio[name=questionOne]:checked").val());
-      console.log(questionOne);
       var questionTwo = parseInt($("input:radio[name=questionTwo]:checked").val());
       var questionThree = parseInt($("input:radio[name=questionThree]:checked").val());
       var questionFour = parseInt($("input:radio[name=questionFour]:checked").val());
       var questionFive = parseInt($("input:radio[name=questionFive]:checked").val());
       var nameInput = $("input#nameInput").val();
       var totalQuiz = questionOne + questionTwo + questionThree + questionFour + questionFive;
-      console.log(totalQuiz);
-      console.log(nameInput);
+   
 
           if (totalQuiz <= 6) {
             $(".modal").hide();
@@ -73,7 +71,7 @@ $(document).ready(function() {
           if (nameInput.length === 0) {
             $(".name").text(nameInput)
           } else {
-            $(".name").text(" " + nameInput);
+            $(".name").text(", " + nameInput);
           }
   });
 
