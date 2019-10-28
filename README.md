@@ -10,8 +10,7 @@ _This program was designed to allow someone interested in programming to fill ou
 
 ## Setup-Installation Requirements
 
-* _Clone this repository from https://github.com/vstankatz/Language-Selector_
-* _Open the downloaded folder and click index.html_
+* _Go to https://vstankatz.github.io/Language-Selector/
 * _Click the "Take the Quiz" button_
 * _Pick one option for each question, fill out your name, and click "Find my Language!"_
 * _Read the page you get for your result, if you're not satisfied hit the "Back" button and repeat the process._
